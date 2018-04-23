@@ -1,0 +1,56 @@
+.timeline-item {
+  padding: 3em 2em 3em;
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+  border-left: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.timeline-item h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+}
+
+.timeline-item p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  text-align: justify;
+}
+
+.timeline-item strong {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.timeline-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 2em;
+  font-weight: bold;
+  top: 1em;
+  display: block;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: .785rem;
+}
+
+.timeline-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 1em;
+  position: absolute;
+  left: -7px;
+  border-radius: 10px;
+  content: '';
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: #fff;
+}
+
+.timeline-item:last-child { 
+  -webkit-border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%; 
+  -webkit-border-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%; 
+       -o-border-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%; 
+          border-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(255, 255, 255, 0.3)), to(rgba(0, 0, 0, 0))) 1 100%; 
+          border-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 60%, rgba(0, 0, 0, 0)) 1 100%;
+}

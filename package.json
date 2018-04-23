@@ -1,0 +1,26 @@
+{
+  "name": "augenic_arts",
+  "version": "1.0.0",
+  "description": "Portfolio page for Robert Kozma | Front-End Developer | UI / UX Designer",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Robert",
+    "Kozma",
+    "Augenic",
+    "Arts",
+    "Portfolio"
+  ],
+  "author": "Robert Kozma",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.4",
+    "nodemon": "^1.17.3"
+  }
+}
